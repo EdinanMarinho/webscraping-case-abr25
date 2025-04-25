@@ -1,4 +1,4 @@
-# Scrapy settings for coleta project
+# Scrapy settings for new_coleta project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,15 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "coleta"
+BOT_NAME = "new_coleta"
 
-SPIDER_MODULES = ["coleta.spiders"]
-NEWSPIDER_MODULE = "coleta.spiders"
+SPIDER_MODULES = ["new_coleta.spiders"]
+NEWSPIDER_MODULE = "new_coleta.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
-
+#USER_AGENT = "new_coleta (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -31,8 +30,8 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
 
-#Disable cookies (enabled by default)
-COOKIES_ENABLED = True
+# Disable cookies (enabled by default)
+#COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -46,13 +45,13 @@ COOKIES_ENABLED = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "coleta.middlewares.ColetaSpiderMiddleware": 543,
+#    "new_coleta.middlewares.NewColetaSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "coleta.middlewares.ColetaDownloaderMiddleware": 543,
+#    "new_coleta.middlewares.NewColetaDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -64,7 +63,7 @@ COOKIES_ENABLED = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "coleta.pipelines.ColetaPipeline": 300,
+#    "new_coleta.pipelines.NewColetaPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
