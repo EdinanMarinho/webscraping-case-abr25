@@ -13,8 +13,11 @@ class NotebookSpider(scrapy.Spider):
         for product in products:
 
             yield {
-                'brand':product.css('span.poly-component__brand::text').get(),
-                'name':product.css('a.poly-component__title::text').get()
+                'brand': product.css('span.poly-component__brand::text').get(),
+                'name': product.css('a.poly-component__title::text').get(),
+                'seller': product.css('span.poly-component__seller::text').get(),
+                'reviews_rating': product.css('span.poly-reviews__rating::text').get()
+
             }
 
         pass
